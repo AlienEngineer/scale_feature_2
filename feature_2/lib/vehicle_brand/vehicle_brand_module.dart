@@ -5,10 +5,13 @@ import 'brand.dart';
 
 class VehicleBrandModule extends FeatureModule {
   final DataConsumer<Brand> onBrandChange;
+
   VehicleBrandModule({required this.onBrandChange});
 
   @override
   void setup(PublicRegistry registry) {
-    registry.addGlobalStateManager(VehicleBrandStateManager(onBrandChange));
+    registry.addGlobalStateManager(
+      VehicleBrandStateManager(onBrandChange),
+    );
   }
 }
