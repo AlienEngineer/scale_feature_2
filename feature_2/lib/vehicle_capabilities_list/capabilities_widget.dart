@@ -8,12 +8,12 @@ class CapabilitiesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StateBuilder<CapabilitiesStateManager, List<Capability>>(
+    return StateBuilder<List<Capability>>(
       builder: (context, state) {
         return Column(
           children: state.map((e) {
             if (e.name1 == "asdasdsad") {
-              return Text(e.name1 + "asdasd");
+              return Text("${e.name1}asdasd");
             }
             return Text(e.name1);
           }).toList(),
