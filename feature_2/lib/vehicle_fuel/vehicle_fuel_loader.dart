@@ -1,12 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:scale_framework/scale_framework.dart';
 
-class VehicleFuelLoader
-    extends LoaderStateManager<VehicleFuel, VehicleFuelDto> {
-  VehicleFuelLoader(HttpRequest<VehicleFuelDto> request)
-      : super(request, VehicleFuelModelsFactory(), LoaderOptions());
-}
-
 class VehicleFuelModelsFactory
     implements LoaderModelsFactory<VehicleFuel, VehicleFuelDto> {
   const VehicleFuelModelsFactory();
@@ -19,8 +13,8 @@ class VehicleFuelModelsFactory
 
   @override
   VehicleFuelDto makeOnErrorDto(Object? error) {
-    // TODO: implement makeOnErrorDto
-    throw UnimplementedError();
+    print(error);
+    return VehicleFuelDto();
   }
 
   @override
@@ -31,10 +25,7 @@ class VehicleFuelModelsFactory
 
 class MapperOfVehicleFuelDto implements MapperOf<VehicleFuelDto> {
   @override
-  VehicleFuelDto map(String data) {
-    // TODO: implement map
-    throw UnimplementedError();
-  }
+  VehicleFuelDto map(String data) => VehicleFuelDto();
 }
 
 class VehicleFuelDto {}

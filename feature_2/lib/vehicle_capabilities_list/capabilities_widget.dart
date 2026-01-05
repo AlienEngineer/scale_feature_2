@@ -24,8 +24,5 @@ class CapabilitiesWidget extends StatelessWidget {
 }
 
 class CapabilitiesStateManager extends StateManager<List<Capability>> {
-  CapabilitiesStateManager(DataConsumer<List<Capability>> onChange)
-      : super([]) {
-    onChange.listen((capabilities) => pushNewState((_) => capabilities));
-  }
+  CapabilitiesStateManager() : super([]);
 }

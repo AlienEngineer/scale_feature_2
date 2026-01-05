@@ -9,6 +9,9 @@ class VehicleFuelModule implements FeatureModule {
       factory: VehicleFuelModelsFactory(),
       uri: 'vehicle/{VIN}/fuel',
       requires: ['VehicleModel'],
+      options: LoaderOptions(
+        initializeOnAppStart: true,
+      ),
     );
   }
 }
