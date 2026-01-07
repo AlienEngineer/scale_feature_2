@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
 class MockBackendModule implements FeatureModule {
   @override
   void setup(PublicRegistry registry) {
-    registry.addSingletonLazy<http.Client>((service) => MockClient(
+    registry.addSingleton<http.Client>((service) => MockClient(
           (request) async {
             print('here');
             return http.Response("some result 2", 200);

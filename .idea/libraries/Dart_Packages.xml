@@ -13,7 +13,6 @@
           <value>
             <list>
               <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/bloc-9.2.0/lib" />
-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/bloc-9.1.0/lib" />
             </list>
           </value>
         </entry>
@@ -174,8 +173,7 @@
         <entry key="scale_framework">
           <value>
             <list>
-              <option value="$USER_HOME$/.pub-cache/hosted/onepub.dev%47api%47ynnonoflyg%47/scale_framework-1.0.21/lib" />
-              <option value="$USER_HOME$/.pub-cache/hosted/onepub.dev%47api%47ynnonoflyg%47/scale_framework-1.0.17/lib" />
+              <option value="$USER_HOME$/.pub-cache/hosted/onepub.dev%47api%47ynnonoflyg%47/scale_framework-1.0.23/lib" />
             </list>
           </value>
         </entry>
@@ -259,10 +257,8 @@
       </option>
     </properties>
     <CLASSES>
-      <root url="file://$USER_HOME$/.pub-cache/hosted/onepub.dev%47api%47ynnonoflyg%47/scale_framework-1.0.17/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/onepub.dev%47api%47ynnonoflyg%47/scale_framework-1.0.21/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/onepub.dev%47api%47ynnonoflyg%47/scale_framework-1.0.23/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.13.0/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/bloc-9.1.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/bloc-9.2.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.4.0/lib" />

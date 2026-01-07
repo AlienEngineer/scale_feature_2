@@ -13,10 +13,10 @@ packages:
     dependency: transitive
     description:
       name: bloc
-      sha256: a2cebb899f91d36eeeaa55c7b20b5915db5a9df1b8fd4a3c9c825e22e474537d
+      sha256: a48653a82055a900b88cd35f92429f068c5a8057ae9b136d197b3d56c57efb81
       url: "https://pub.dev"
     source: hosted
-    version: "9.1.0"
+    version: "9.2.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -71,7 +71,7 @@ packages:
       path: "../feature_2"
       relative: true
     source: path
-    version: "2.0.22"
+    version: "2.0.23"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -198,10 +198,10 @@ packages:
     dependency: "direct main"
     description:
       name: scale_framework
-      sha256: "9b5b4c9122a541f32f50db9b917ee40ec28eca5b29e8f8817b92789ab5b34534"
+      sha256: a6115849042edf36e480d390ede0ae7ad69965d31c891c73326aca94250367f7
       url: "https://onepub.dev/api/ynnonoflyg/"
     source: hosted
-    version: "1.0.17"
+    version: "1.0.23"
   sky_engine:
     dependency: transitive
     description: flutter

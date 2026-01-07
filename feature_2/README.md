@@ -1,39 +1,124 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Vehicle Status
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+Holds features related with vehicle status.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+- [Release Notes](documentation/release%20notes.md)
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
 
-## Features
+## Public Widgets
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
+### Increment Feature
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+<table>
+<tr>
+<td>Description</td>
+<td>Code Snippet</td>
+<td>Render</td>
+<td>Data Transfers</td>
+</tr>
+<tr>
+<td>
+Vehicle Brand
+</td>
+<td>
 
 ```dart
-const like = 'sample';
+VehicleBrandWidget()
 ```
 
-## Additional information
+</td>
+<td>
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+![](/documentation/IncrementCounterWidget.png)
+</td>
+<td>
+
+Consumes:
+```dart
+class Brand {
+  final String name;
+  Brand({required this.name});
+}
+```
+</td>
+</tr>
+</table>
+
+### Vehicle Capabilities List
+
+<table>
+<tr>
+<td>Description</td>
+<td>Code Snippet</td>
+<td>Render</td>
+<td>Data Transfers</td>
+</tr>
+<tr>
+<td>
+Capabilities Widget List
+</td>
+<td>
+
+```dart
+CapabilitiesWidget()
+```
+
+</td>
+<td>
+
+![](documentation/GarageWidget.png)
+</td>
+<td>
+
+Consumes:
+```dart
+class Capability {
+  final String name1;
+  Capability({required this.name1});
+}
+```
+</td>
+</tr>
+</table>
+
+### Vehicle Fuel
+
+<table>
+<tr>
+<td>Description</td>
+<td>Code Snippet</td>
+<td>Render</td>
+<td>Data Transfers</td>
+</tr>
+<tr>
+<td>
+Vehicle Fuel Widget
+</td>
+<td>
+
+```dart
+VehicleFuelWidget()
+```
+
+</td>
+<td>
+
+![](documentation/GarageWidget.png)
+</td>
+<td>
+N/A
+</td>
+</tr>
+</table>
+
+## Inversion Of Control
+
+```dart
+// Module for Vehicle Capabilities Feature
+CapabilitiesModule(),
+// Module for Vehicle Brand Feature
+VehicleBrandModule(),
+// Module for Vehicle Fuel Feature
+VehicleFuelModule()
+```
